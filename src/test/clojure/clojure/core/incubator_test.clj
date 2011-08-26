@@ -8,7 +8,7 @@
 ;   the terms of this license.
 ;   You must not remove this notice, or any other, from this software.
 
-(ns clojure.contrib.test-core
+(ns clojure.core.incubator-test
   (:use clojure.test
         clojure.core.incubator))
 

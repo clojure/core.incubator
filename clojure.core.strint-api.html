@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <title>clojure.core.strint - Functions proposed for core inclusion 0.1.1 API documentation</title>
+    <link href="static/favicon.png" rel="icon" />
+    <link href="static/favicon.png" rel="shortcut icon" />
+    <link media="all" type="text/css" href="static/clojure.css" rel="stylesheet" />
+    <link media="all" type="text/css" href="static/wiki.css" rel="stylesheet" />
+    <link media="all" type="text/css" href="static/internal.css" rel="stylesheet" />
+    <style>.menuWrapper{height: 36px;}</style>
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" href="http://www.wikispaces.com/_/2009051601/s/internal_ie.css" type="text/css" />
+    <![endif]-->
+  </head>
+<!--
+This document was auto-generated from the source by the clojure autodoc system.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+-->
+  <body>
+    <div id="AllContentContainer">
+      <div id="Header">
+	<a id="Logo" href="index.html"><img alt="Clojure" height="100" width="100" src="static/clojure-icon.gif" /></a>
+	<h1><a title="page header title" id="page-header" href="index.html">core.incubator API Reference</a></h1>
+      </div>
+      <div id="leftcolumn"><div style="text-align: center;"></div>
+<div class="menu">
+  <div class="WikiCustomNav WikiElement wiki">
+    <span class="toc-header"><span id="project-name">Functions proposed for core inclusion</span> <span id="version">0.1.1</span> API</span><br />
+    <ul>
+      <li><a class="wiki_link" href="index.html">Overview</a></li>
+      <li><a class="wiki_link" href="api-index.html">API Index</a></li>
+    </ul>
+    <div class="NamespaceTOC">
+      <span class="toc-header">Namespaces</span>
+      <ul id="left-sidebar-list">
+        <li><a href="clojure.core.incubator-api.html" class="wiki_link">clojure.core.incubator</a></li><li><a href="clojure.core.strint-api.html" class="wiki_link">clojure.core.strint</a></li>
+      </ul>
+    </div>
+    
+    <a href="http://clojure.org" class="wiki_link">Clojure Home</a>
+  </div>
+</div>
+</div>
+      <div id="rightcolumn">
+	<div id="Content">
+	  <div class="contentBox"><div class="innerContentBox">
+              <div id="content_view" class="wiki wikiPage">
+                <div id="right-sidebar"><div id="toc">
+  <h1 class="nopad">Table of Contents</h1>
+  <div style="margin-left: 1em;" class="toc-section">
+    <a href="#toc0">Overview</a>
+    <div style="margin-left: 1em;" class="toc-entry">
+      <a href="#clojure.core.strint/&lt;&lt;">&lt;&lt;</a>
+    </div>
+    <br />
+  </div>
+</div>
+</div>
+                <div id="content-tag"><h1 id="overview">API for <span id="namespace-name">clojure.core.strint</span>
+  - <span id="header-project">Functions proposed for core inclusion</span> <span id="header-version">0.1.1</span> (<span id="header-status">in development</span>)
+  </h1>
+<span id="author-line">by <span id="author-name">Chas Emerick</span><br /></span>
+<br />Full namespace name: <span id="long-name">clojure.core.strint</span>
+<p></p>
+<h2>Overview</h2>
+<pre id="namespace-docstr">Compile-time string interpolation for Clojure.</pre>
+
+
+<br />
+<h2>Public Variables and Functions</h2>
+<div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clojure.core.strint/&lt;&lt;">&lt;&lt;</h2>
+  <span id="var-type">macro</span><br />
+  <pre id="var-usage">Usage: (&lt;&lt; string)
+</pre>
+  <pre id="var-docstr">Takes a single string argument and emits a str invocation that concatenates
+the string data and evaluated expressions contained within that argument.
+Evaluation is controlled using ~{} and ~() forms. The former is used for
+simple value replacement using clojure.core/str; the latter can be used to
+embed the results of arbitrary function invocation into the produced string.
+
+Examples:
+user=&gt; (def v 30.5)
+#'user/v
+user=&gt; (&lt;&lt; "This trial required ~{v}ml of solution.")
+"This trial required 30.5ml of solution."
+user=&gt; (&lt;&lt; "There are ~(int v) days in November.")
+"There are 30 days in November."
+user=&gt; (def m {:a [1 2 3]})
+#'user/m
+user=&gt; (&lt;&lt; "The total for your order is $~(-&gt;&gt; m :a (apply +)).")
+"The total for your order is $6."
+
+Note that quotes surrounding string literals within ~() forms must be
+escaped.</pre>
+  
+  
+  <a href="https://github.com/clojure/core.incubator/blob/e7627ef0586735271d478b1fe97c2d3c4933e788/src/main/clojure/clojure/core/strint.clj#L49" id="var-source">Source</a>
+</div>
+
+
+</div>
+              </div>
+            </div>
+          </div>
+	</div>
+	<div id="foot">
+	  <div style="text-align: center;" id="copyright">Copyright 2007-2011 by Rich Hickey and the various contributors</div>
+	</div>
+      </div>
+      <div id="DesignedBy">Logo &amp; site design by <a title="Visit Tom Hickey's website." href="http://www.tomhickey.com">Tom Hickey</a>.<br />
+      Clojure auto-documentation system by Tom Faulhaber.</div>
+    </div>
+    <!-- /AllContentContainer -->
+  </body>
+
+</html>

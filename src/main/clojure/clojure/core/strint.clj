@@ -26,7 +26,7 @@
   (try
     (let [r (-> s java.io.StringReader. java.io.PushbackReader.)]
       [(read r) (slurp r)])
-    (catch Exception e))) ; this indicates an invalid form -- the head of s is just string data
+    (catch IOException e))) ; this indicates an invalid form -- the head of s is just string data
 
 (defn- interpolate
   "Yields a seq of Strings and read forms."

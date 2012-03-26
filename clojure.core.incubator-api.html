@@ -50,28 +50,43 @@ namespace.
                 <div id="right-sidebar"><div id="toc">
   <h1 class="nopad">Table of Contents</h1>
   <div style="margin-left: 1em;" class="toc-section">
-    <a href="#toc0">Overview</a>
+    <a href="#toc0" style="margin-top: 3px;">Overview</a>
+    
+  </div><div style="margin-left: 1em;" class="toc-section">
+    <a href="#" style="margin-top: 3px;"></a>
+    
+  </div><div style="margin-left: 1em;" class="toc-section">
+    <a href="#" style="margin-top: 3px;"></a>
+    
+  </div><div style="margin-left: 1em;" class="toc-section">
+    <a href="#var-section" style="margin-top: 3px;">Vars and Functions</a>
     <div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clojure.core.incubator/-?&gt;">-?&gt;</a>
+      <a class="toc-entry-anchor" href="#clojure.core.incubator/-?&gt;">-?&gt;</a>
+      
     </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clojure.core.incubator/-?&gt;&gt;">-?&gt;&gt;</a>
+      <a class="toc-entry-anchor" href="#clojure.core.incubator/-?&gt;&gt;">-?&gt;&gt;</a>
+      
     </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clojure.core.incubator/.?.">.?.</a>
+      <a class="toc-entry-anchor" href="#clojure.core.incubator/.?.">.?.</a>
+      
     </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clojure.core.incubator/defmacro-">defmacro-</a>
+      <a class="toc-entry-anchor" href="#clojure.core.incubator/defmacro-">defmacro-</a>
+      
     </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clojure.core.incubator/dissoc-in">dissoc-in</a>
+      <a class="toc-entry-anchor" href="#clojure.core.incubator/dissoc-in">dissoc-in</a>
+      
     </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clojure.core.incubator/new-by-name">new-by-name</a>
+      <a class="toc-entry-anchor" href="#clojure.core.incubator/new-by-name">new-by-name</a>
+      
     </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clojure.core.incubator/seqable?">seqable?</a>
+      <a class="toc-entry-anchor" href="#clojure.core.incubator/seqable?">seqable?</a>
+      
     </div>
-    <br />
   </div>
 </div>
 </div>
-                <div id="content-tag"><h1 id="overview">API for <span id="namespace-name">clojure.core.incubator</span>
-  - <span id="header-project">Functions proposed for core inclusion</span> <span id="header-version">0.1.1</span> (<span id="header-status">in development</span>)
+                <div id="content-tag"><h1 id="overview">API for <span id="clojure.core.incubator">clojure.core.incubator</span>
+  - <span id="header-project">Functions proposed for core inclusion</span> <span id="header-version">0.1.1</span><span id="header-status-block"> (<span id="header-status">in development</span>)</span>
   </h1>
 <span id="author-line">by <span id="author-name">Laurent Petit (and others)</span><br /></span>
 <br />Full namespace name: <span id="long-name">clojure.core.incubator</span>
@@ -82,101 +97,107 @@ namespace.
 
 
 <br />
-<h2>Public Variables and Functions</h2>
-<div id="var-entry">
-  <br />
-  <hr />
-  <h2 id="clojure.core.incubator/-?&gt;">-?&gt;</h2>
-  <span id="var-type">macro</span><br />
-  <pre id="var-usage">Usage: (-?&gt; x form)
+
+
+
+<div id="var-section">
+  <p></p>
+  <h2>Public Variables and Functions</h2>
+  <div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.core.incubator/-?&gt;">-?&gt;</h2>
+    <span id="var-type">macro</span><br />
+    <pre id="var-usage">Usage: (-?&gt; x form)
        (-?&gt; x form &amp; forms)
 </pre>
-  <pre id="var-docstr">Same as clojure.core/-&gt; but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).
+    <pre id="var-docstr">Same as clojure.core/-&gt; but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).
 Examples :
 (-?&gt; "foo" .toUpperCase (.substring 1)) returns "OO"
 (-?&gt; nil .toUpperCase (.substring 1)) returns nil
 </pre>
-  
-  
-  <a href="https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj#L29" id="var-source">Source</a>
-</div><div id="var-entry">
-  <br />
-  <hr />
-  <h2 id="clojure.core.incubator/-?&gt;&gt;">-?&gt;&gt;</h2>
-  <span id="var-type">macro</span><br />
-  <pre id="var-usage">Usage: (-?&gt;&gt; x form)
+    
+    
+    <a href="https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj#L29" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.core.incubator/-?&gt;&gt;">-?&gt;&gt;</h2>
+    <span id="var-type">macro</span><br />
+    <pre id="var-usage">Usage: (-?&gt;&gt; x form)
        (-?&gt;&gt; x form &amp; forms)
 </pre>
-  <pre id="var-docstr">Same as clojure.core/-&gt;&gt; but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).
+    <pre id="var-docstr">Same as clojure.core/-&gt;&gt; but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).
 Examples :
 (-?&gt;&gt; (range 5) (map inc)) returns (1 2 3 4 5)
 (-?&gt;&gt; [] seq (map inc)) returns nil
 </pre>
-  
-  
-  <a href="https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj#L45" id="var-source">Source</a>
-</div><div id="var-entry">
-  <br />
-  <hr />
-  <h2 id="clojure.core.incubator/.?.">.?.</h2>
-  <span id="var-type">macro</span><br />
-  <pre id="var-usage">Usage: (.?. x form)
+    
+    
+    <a href="https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj#L45" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.core.incubator/.?.">.?.</h2>
+    <span id="var-type">macro</span><br />
+    <pre id="var-usage">Usage: (.?. x form)
        (.?. x form &amp; forms)
 </pre>
-  <pre id="var-docstr">Same as clojure.core/.. but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).
+    <pre id="var-docstr">Same as clojure.core/.. but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).
 Examples :
 (.?. "foo" .toUpperCase (.substring 1)) returns "OO"
 (.?. nil .toUpperCase (.substring 1)) returns nil
 </pre>
-  
-  
-  <a href="https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj#L37" id="var-source">Source</a>
-</div><div id="var-entry">
-  <br />
-  <hr />
-  <h2 id="clojure.core.incubator/defmacro-">defmacro-</h2>
-  <span id="var-type">macro</span><br />
-  <pre id="var-usage">Usage: (defmacro- name &amp; decls)
+    
+    
+    <a href="https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj#L37" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.core.incubator/defmacro-">defmacro-</h2>
+    <span id="var-type">macro</span><br />
+    <pre id="var-usage">Usage: (defmacro- name &amp; decls)
 </pre>
-  <pre id="var-docstr">Same as defmacro but yields a private definition</pre>
-  
-  
-  <a href="https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj#L16" id="var-source">Source</a>
-</div><div id="var-entry">
-  <br />
-  <hr />
-  <h2 id="clojure.core.incubator/dissoc-in">dissoc-in</h2>
-  <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (dissoc-in m [k &amp; ks :as keys])
+    <pre id="var-docstr">Same as defmacro but yields a private definition</pre>
+    
+    
+    <a href="https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj#L16" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.core.incubator/dissoc-in">dissoc-in</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (dissoc-in m [k &amp; ks :as keys])
 </pre>
-  <pre id="var-docstr">Dissociates an entry from a nested associative structure returning a new
+    <pre id="var-docstr">Dissociates an entry from a nested associative structure returning a new
 nested structure. keys is a sequence of keys. Any empty maps that result
 will not be present in the new structure.</pre>
-  
-  
-  <a href="https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj#L56" id="var-source">Source</a>
-</div><div id="var-entry">
-  <br />
-  <hr />
-  <h2 id="clojure.core.incubator/new-by-name">new-by-name</h2>
-  <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (new-by-name class-name &amp; args)
+    
+    
+    <a href="https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj#L56" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.core.incubator/new-by-name">new-by-name</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (new-by-name class-name &amp; args)
 </pre>
-  <pre id="var-docstr">Constructs a Java object whose class is specified by a String.</pre>
-  
-  
-  <a href="https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj#L70" id="var-source">Source</a>
-</div><div id="var-entry">
-  <br />
-  <hr />
-  <h2 id="clojure.core.incubator/seqable?">seqable?</h2>
-  <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (seqable? x)
+    <pre id="var-docstr">Constructs a Java object whose class is specified by a String.</pre>
+    
+    
+    <a href="https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj#L70" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.core.incubator/seqable?">seqable?</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (seqable? x)
 </pre>
-  <pre id="var-docstr">Returns true if (seq x) will succeed, false otherwise.</pre>
-  
-  
-  <a href="https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj#L77" id="var-source">Source</a>
+    <pre id="var-docstr">Returns true if (seq x) will succeed, false otherwise.</pre>
+    
+    
+    <a href="https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj#L77" id="var-source">Source</a>
+  </div>
 </div>
 
 
@@ -186,7 +207,7 @@ will not be present in the new structure.</pre>
           </div>
 	</div>
 	<div id="foot">
-	  <div style="text-align: center;" id="copyright">Copyright 2007-2011 by Rich Hickey and the various contributors</div>
+	  <div style="text-align: center;" id="copyright">Copyright 2007-2012 by Rich Hickey and the various contributors</div>
 	</div>
       </div>
       <div id="DesignedBy">Logo &amp; site design by <a title="Visit Tom Hickey's website." href="http://www.tomhickey.com">Tom Hickey</a>.<br />

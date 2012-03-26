@@ -50,16 +50,25 @@ namespace.
                 <div id="right-sidebar"><div id="toc">
   <h1 class="nopad">Table of Contents</h1>
   <div style="margin-left: 1em;" class="toc-section">
-    <a href="#toc0">Overview</a>
+    <a href="#toc0" style="margin-top: 3px;">Overview</a>
+    
+  </div><div style="margin-left: 1em;" class="toc-section">
+    <a href="#" style="margin-top: 3px;"></a>
+    
+  </div><div style="margin-left: 1em;" class="toc-section">
+    <a href="#" style="margin-top: 3px;"></a>
+    
+  </div><div style="margin-left: 1em;" class="toc-section">
+    <a href="#var-section" style="margin-top: 3px;">Vars and Functions</a>
     <div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clojure.core.strint/&lt;&lt;">&lt;&lt;</a>
+      <a class="toc-entry-anchor" href="#clojure.core.strint/&lt;&lt;">&lt;&lt;</a>
+      
     </div>
-    <br />
   </div>
 </div>
 </div>
-                <div id="content-tag"><h1 id="overview">API for <span id="namespace-name">clojure.core.strint</span>
-  - <span id="header-project">Functions proposed for core inclusion</span> <span id="header-version">0.1.1</span> (<span id="header-status">in development</span>)
+                <div id="content-tag"><h1 id="overview">API for <span id="clojure.core.strint">clojure.core.strint</span>
+  - <span id="header-project">Functions proposed for core inclusion</span> <span id="header-version">0.1.1</span><span id="header-status-block"> (<span id="header-status">in development</span>)</span>
   </h1>
 <span id="author-line">by <span id="author-name">Chas Emerick</span><br /></span>
 <br />Full namespace name: <span id="long-name">clojure.core.strint</span>
@@ -69,15 +78,20 @@ namespace.
 
 
 <br />
-<h2>Public Variables and Functions</h2>
-<div id="var-entry">
-  <br />
-  <hr />
-  <h2 id="clojure.core.strint/&lt;&lt;">&lt;&lt;</h2>
-  <span id="var-type">macro</span><br />
-  <pre id="var-usage">Usage: (&lt;&lt; string)
+
+
+
+<div id="var-section">
+  <p></p>
+  <h2>Public Variables and Functions</h2>
+  <div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.core.strint/&lt;&lt;">&lt;&lt;</h2>
+    <span id="var-type">macro</span><br />
+    <pre id="var-usage">Usage: (&lt;&lt; string)
 </pre>
-  <pre id="var-docstr">Takes a single string argument and emits a str invocation that concatenates
+    <pre id="var-docstr">Takes a single string argument and emits a str invocation that concatenates
 the string data and evaluated expressions contained within that argument.
 Evaluation is controlled using ~{} and ~() forms. The former is used for
 simple value replacement using clojure.core/str; the latter can be used to
@@ -97,9 +111,10 @@ user=&gt; (&lt;&lt; "The total for your order is $~(-&gt;&gt; m :a (apply +)).")
 
 Note that quotes surrounding string literals within ~() forms must be
 escaped.</pre>
-  
-  
-  <a href="https://github.com/clojure/core.incubator/blob/e7627ef0586735271d478b1fe97c2d3c4933e788/src/main/clojure/clojure/core/strint.clj#L49" id="var-source">Source</a>
+    
+    
+    <a href="https://github.com/clojure/core.incubator/blob/e7627ef0586735271d478b1fe97c2d3c4933e788/src/main/clojure/clojure/core/strint.clj#L49" id="var-source">Source</a>
+  </div>
 </div>
 
 
@@ -109,7 +124,7 @@ escaped.</pre>
           </div>
 	</div>
 	<div id="foot">
-	  <div style="text-align: center;" id="copyright">Copyright 2007-2011 by Rich Hickey and the various contributors</div>
+	  <div style="text-align: center;" id="copyright">Copyright 2007-2012 by Rich Hickey and the various contributors</div>
 	</div>
       </div>
       <div id="DesignedBy">Logo &amp; site design by <a title="Visit Tom Hickey's website." href="http://www.tomhickey.com">Tom Hickey</a>.<br />

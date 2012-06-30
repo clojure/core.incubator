@@ -1,6 +1,32 @@
 # core.incubator
 
-Future home of fns proposed for core inclusion.
+Future home of fns proposed for core inclusion.  Currently:
+
+* A set of short-circuiting "nil-safe" threading macros (e.g. `-?>`, `-?>>` and `.?.`)
+* An implementation of `dissoc-in`
+* An implementation of `seqable?`
+* A string interpolation macro (`<<`), originally described
+[here](http://cemerick.com/2009/12/04/string-interpolation-in-clojure/).
+
+For more details, please see the project's [generated API documentation](http://clojure.github.com/core.incubator/).
+
+## "Installation"
+
+Add a dependency on core.incubator to your Leinigen `project.clj`:
+
+```clojure
+[org.clojure/core.incubator "0.1.1"]
+```
+
+…or to your Maven `pom.xml`:
+
+```clojure
+<dependency>
+  <groupId>org.clojure</groupId>
+  <artifactId>core.incubator</artifactId>
+  <version>0.1.1</version>
+</dependency>
+```
 
 ## License
 

@@ -47,13 +47,13 @@
       [s])))
 
 (defmacro <<
-  "Takes a single string argument and emits a str invocation that concatenates
-  the string data and evaluated expressions contained within that argument.
-  Evaluation is controlled using ~{} and ~() forms. The former is used for
-  simple value replacement using clojure.core/str; the latter can be used to
-  embed the results of arbitrary function invocation into the produced string.
+  "Accepts one or more strings; emits a `str` invocation that concatenates
+the string data and evaluated expressions contained within that argument.
+Evaluation is controlled using ~{} and ~() forms. The former is used for
+simple value replacement using clojure.core/str; the latter can be used to
+embed the results of arbitrary function invocation into the produced string.
 
-  Examples:
+Examples:
   user=> (def v 30.5)
   #'user/v
   user=> (<< \"This trial required ~{v}ml of solution.\")
@@ -64,8 +64,13 @@
   #'user/m
   user=> (<< \"The total for your order is $~(->> m :a (apply +)).\")
   \"The total for your order is $6.\"
-
-  Note that quotes surrounding string literals within ~() forms must be
-  escaped."
-  [string]
-  `(str ~@(interpolate string)))
+  user=> (<< \"Just split a long interpolated string up into ~(-> m :a (get 0)), \"
+           \"~(-> m :a (get 1)), or even ~(-> m :a (get 2)) separate strings \"
+           \"if you don't want a << expression to end up being e.g. ~(* 4 (int v)) \"
+           \"columns wide.\")
+  \"Just split a long interpolated string up into 1, 2, or even 3 separate strings if you don't want a << expression to end up being e.g. 120 columns wide.\"
+  
+Note that quotes surrounding string literals within ~() forms must be
+escaped."
+  [& strings]
+  `(str ~@(interpolate (apply str strings))))

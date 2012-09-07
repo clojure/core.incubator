@@ -2,13 +2,15 @@
 
 Future home of fns proposed for core inclusion.  Currently:
 
-* A set of short-circuiting "nil-safe" threading macros (e.g. `-?>`, `-?>>` and `.?.`)
+* A set of short-circuiting "nil-safe" threading macros (e.g. `-?>`, `-?>>` and
+  `.?.`)
 * An implementation of `dissoc-in`
 * An implementation of `seqable?`
 * A string interpolation macro (`<<`), originally described
-[here](http://cemerick.com/2009/12/04/string-interpolation-in-clojure/).
+  [here](http://cemerick.com/2009/12/04/string-interpolation-in-clojure/).
 
-For more details, please see the project's [generated API documentation](http://clojure.github.com/core.incubator/).
+For more details, please see the project's [generated API
+documentation](http://clojure.github.com/core.incubator/).
 
 ## "Installation"
 

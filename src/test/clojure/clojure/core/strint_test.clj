@@ -38,3 +38,21 @@
              (<< "There are ~(int v) days in November.")))
       (is (= "The total for your order is $6."
              (<< "The total for your order is $~(->> m :a (apply +))."))))))
+
+(deftest variadic-<<
+  (testing "docstring examples, split across multiple string literals"
+    (let [v 30.5
+          m {:a [1 2 3]}]
+      (is (= "This trial required 30.5ml of solution."
+             (<< "This trial required ~{" "v}ml of solution.")))
+      (is (= "There are 30 days in November."
+             (<< "There are ~(" "int " "v) days in November.")))
+      (is (= "The total for your order is $6."
+             (<< "The total " "for your order is" " $~(->> m :a (apply " "+))." "")))
+      (is (= (str "Just split a long interpolated string up into 1, 2, or even 3 "
+                  "separate strings if you don't want a << expression to end up being "
+                  "e.g. 120 columns wide.")
+            (<< "Just split a long interpolated string up into ~(-> m :a (get 0)), "
+                "~(-> m :a (get 1)), or even ~(-> m :a (get 2)) separate strings "
+                "if you don't want a << expression to end up being e.g. ~(* 4 (int v)) "
+                "columns wide."))))))

@@ -17,7 +17,7 @@ documentation](http://clojure.github.com/core.incubator/).
 Add a dependency on core.incubator to your Leinigen `project.clj`:
 
 ```clojure
-[org.clojure/core.incubator "0.1.1"]
+[org.clojure/core.incubator "0.1.2"]
 ```
 
 …or to your Maven `pom.xml`:
@@ -26,7 +26,7 @@ Add a dependency on core.incubator to your Leinigen `project.clj`:
 <dependency>
   <groupId>org.clojure</groupId>
   <artifactId>core.incubator</artifactId>
-  <version>0.1.1</version>
+  <version>0.1.2</version>
 </dependency>
 ```
 

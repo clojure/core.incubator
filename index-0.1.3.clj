@@ -8,7 +8,7 @@
    :doc
    "Functions/macros variants of the ones that can be found in clojure.core \n(note to other contrib members: feel free to add to this lib)"}
   {:source-url
-   "https://github.com/clojure/core.incubator/blob/e7627ef0586735271d478b1fe97c2d3c4933e788/src/main/clojure/clojure/core/strint.clj",
+   "https://github.com/clojure/core.incubator/blob/9f2590f2cf22c37ba66010983bf6eaf21a90084c/src/main/clojure/clojure/core/strint.clj",
    :wiki-url
    "http://clojure.github.com/core.incubator/clojure.core.strint-api.html",
    :name "clojure.core.strint",
@@ -111,17 +111,17 @@
    :var-type "function",
    :line 77,
    :file "src/main/clojure/clojure/core/incubator.clj"}
-  {:arglists ([string]),
+  {:arglists ([& strings]),
    :name "<<",
    :namespace "clojure.core.strint",
    :source-url
-   "https://github.com/clojure/core.incubator/blob/e7627ef0586735271d478b1fe97c2d3c4933e788/src/main/clojure/clojure/core/strint.clj#L49",
+   "https://github.com/clojure/core.incubator/blob/9f2590f2cf22c37ba66010983bf6eaf21a90084c/src/main/clojure/clojure/core/strint.clj#L49",
    :raw-source-url
-   "https://github.com/clojure/core.incubator/raw/e7627ef0586735271d478b1fe97c2d3c4933e788/src/main/clojure/clojure/core/strint.clj",
+   "https://github.com/clojure/core.incubator/raw/9f2590f2cf22c37ba66010983bf6eaf21a90084c/src/main/clojure/clojure/core/strint.clj",
    :wiki-url
    "http://clojure.github.com/core.incubator//clojure.core.strint-api.html#clojure.core.strint/<<",
    :doc
-   "Takes a single string argument and emits a str invocation that concatenates\nthe string data and evaluated expressions contained within that argument.\nEvaluation is controlled using ~{} and ~() forms. The former is used for\nsimple value replacement using clojure.core/str; the latter can be used to\nembed the results of arbitrary function invocation into the produced string.\n\nExamples:\nuser=> (def v 30.5)\n#'user/v\nuser=> (<< \"This trial required ~{v}ml of solution.\")\n\"This trial required 30.5ml of solution.\"\nuser=> (<< \"There are ~(int v) days in November.\")\n\"There are 30 days in November.\"\nuser=> (def m {:a [1 2 3]})\n#'user/m\nuser=> (<< \"The total for your order is $~(->> m :a (apply +)).\")\n\"The total for your order is $6.\"\n\nNote that quotes surrounding string literals within ~() forms must be\nescaped.",
+   "Accepts one or more strings; emits a `str` invocation that concatenates\nthe string data and evaluated expressions contained within that argument.\nEvaluation is controlled using ~{} and ~() forms. The former is used for\nsimple value replacement using clojure.core/str; the latter can be used to\nembed the results of arbitrary function invocation into the produced string.\n\nExamples:\n  user=> (def v 30.5)\n  #'user/v\n  user=> (<< \"This trial required ~{v}ml of solution.\")\n  \"This trial required 30.5ml of solution.\"\n  user=> (<< \"There are ~(int v) days in November.\")\n  \"There are 30 days in November.\"\n  user=> (def m {:a [1 2 3]})\n  #'user/m\n  user=> (<< \"The total for your order is $~(->> m :a (apply +)).\")\n  \"The total for your order is $6.\"\n  user=> (<< \"Just split a long interpolated string up into ~(-> m :a (get 0)), \"\n           \"~(-> m :a (get 1)), or even ~(-> m :a (get 2)) separate strings \"\n           \"if you don't want a << expression to end up being e.g. ~(* 4 (int v)) \"\n           \"columns wide.\")\n  \"Just split a long interpolated string up into 1, 2, or even 3 separate strings if you don't want a << expression to end up being e.g. 120 columns wide.\"\n  \nNote that quotes surrounding string literals within ~() forms must be\nescaped.",
    :var-type "macro",
    :line 49,
    :file "src/main/clojure/clojure/core/strint.clj"})}

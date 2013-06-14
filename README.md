@@ -2,12 +2,16 @@
 
 Future home of fns proposed for core inclusion.  Currently:
 
-* A set of short-circuiting "nil-safe" threading macros (e.g. `-?>`, `-?>>` and
-  `.?.`)
+* A "nil-safe" threading macro for interop forms (`.?.`)
 * An implementation of `dissoc-in`
 * An implementation of `seqable?`
 * A string interpolation macro (`<<`), originally described
   [here](http://cemerick.com/2009/12/04/string-interpolation-in-clojure/).
+
+NOTE: If you are looking for the other nil-safe threading macros — `-?>` and
+`-?>>` — they're still here, but deprecated; they were effectively promoted into
+`clojure.core` starting with Clojure 1.5 in the form of `some->` and `some->>`,
+respectively.
 
 For more details, please see the project's [generated API
 documentation](http://clojure.github.com/core.incubator/).

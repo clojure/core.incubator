@@ -27,12 +27,15 @@
 	     `(~'~nil-safe-name (~'~nil-safe-name ~x# ~form#) ~@more#))))
        
 (defnilsafe 
-  "Same as clojure.core/-> but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).
+  "DEPRECATED: use clojure.core/some-> instead.
+   
+   Same as clojure.core/-> but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).
    Examples :
    (-?> \"foo\" .toUpperCase (.substring 1)) returns \"OO\"
    (-?> nil .toUpperCase (.substring 1)) returns nil
    "
-   -> -?>)
+   ->
+  ^{:deprecated "0.1.3"} -?>)
     
 (defnilsafe 
   "Same as clojure.core/.. but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).
@@ -43,12 +46,15 @@
    .. .?.)
 
 (defnilsafe
-  "Same as clojure.core/->> but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).
+  "DEPRECATED: use clojure.core/some->> instead.
+  
+   Same as clojure.core/->> but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).
    Examples :
    (-?>> (range 5) (map inc)) returns (1 2 3 4 5)
    (-?>> [] seq (map inc)) returns nil
    "
-  ->> -?>>)
+  ->> 
+  ^{:deprecated "0.1.3"} -?>>)
 
 ;; ----------------------------------------------------------------------
 ;; scgilardi at gmail

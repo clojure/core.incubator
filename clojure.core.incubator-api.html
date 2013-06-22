@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    <title>clojure.core.incubator - Functions proposed for core inclusion 0.1.3 API documentation</title>
+    <title>clojure.core.incubator - Functions proposed for core inclusion 0.1.4 API documentation</title>
     <link href="static/favicon.png" rel="icon" />
     <link href="static/favicon.png" rel="shortcut icon" />
     <link media="all" type="text/css" href="static/clojure.css" rel="stylesheet" />
@@ -25,7 +25,7 @@ namespace.
       <div id="leftcolumn"><div style="text-align: center;"></div>
 <div class="menu">
   <div class="WikiCustomNav WikiElement wiki">
-    <span class="toc-header"><span id="project-name">Functions proposed for core inclusion</span> <span id="version">0.1.3</span> API</span><br />
+    <span class="toc-header"><span id="project-name">Functions proposed for core inclusion</span> <span id="version">0.1.4</span> API</span><br />
     <ul>
       <li><a class="wiki_link" href="index.html">Overview</a></li>
       <li><a class="wiki_link" href="api-index.html">API Index</a></li>
@@ -84,7 +84,7 @@ namespace.
 </div>
 </div>
                 <div id="content-tag"><h1 id="overview">API for <span id="clojure.core.incubator">clojure.core.incubator</span>
-  - <span id="header-project">Functions proposed for core inclusion</span> <span id="header-version">0.1.3</span><span id="header-status-block"> (<span id="header-status">in development</span>)</span>
+  - <span id="header-project">Functions proposed for core inclusion</span> <span id="header-version">0.1.4</span><span id="header-status-block"> (<span id="header-status">in development</span>)</span>
   </h1>
 <span id="author-line">by <span id="author-name">Laurent Petit (and others)</span><br /></span>
 <br />Full namespace name: <span id="long-name">clojure.core.incubator</span>
@@ -110,14 +110,16 @@ namespace.
     <pre id="var-usage">Usage: (-?&gt; x form)
        (-?&gt; x form &amp; forms)
 </pre>
-    <pre id="var-docstr">Same as clojure.core/-&gt; but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).
+    <pre id="var-docstr">DEPRECATED: use clojure.core/some-&gt; instead.
+
+Same as clojure.core/-&gt; but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).
 Examples :
 (-?&gt; "foo" .toUpperCase (.substring 1)) returns "OO"
 (-?&gt; nil .toUpperCase (.substring 1)) returns nil
 </pre>
     
-    
-    <a href="https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj#L29" id="var-source">Source</a>
+    <span class="var-deprecated"><span id="content">Deprecated since Functions proposed for core inclusion version 0.1.3</span><br /></span>
+    <a href="https://github.com/clojure/core.incubator/blob/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj#L29" id="var-source">Source</a>
   </div><div id="var-entry">
     <br />
     <hr />
@@ -126,14 +128,16 @@ Examples :
     <pre id="var-usage">Usage: (-?&gt;&gt; x form)
        (-?&gt;&gt; x form &amp; forms)
 </pre>
-    <pre id="var-docstr">Same as clojure.core/-&gt;&gt; but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).
-Examples :
-(-?&gt;&gt; (range 5) (map inc)) returns (1 2 3 4 5)
-(-?&gt;&gt; [] seq (map inc)) returns nil
-</pre>
+    <pre id="var-docstr">DEPRECATED: use clojure.core/some-&gt;&gt; instead.
+
+ Same as clojure.core/-&gt;&gt; but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).
+ Examples :
+ (-?&gt;&gt; (range 5) (map inc)) returns (1 2 3 4 5)
+ (-?&gt;&gt; [] seq (map inc)) returns nil
+ </pre>
     
-    
-    <a href="https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj#L45" id="var-source">Source</a>
+    <span class="var-deprecated"><span id="content">Deprecated since Functions proposed for core inclusion version 0.1.3</span><br /></span>
+    <a href="https://github.com/clojure/core.incubator/blob/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj#L48" id="var-source">Source</a>
   </div><div id="var-entry">
     <br />
     <hr />
@@ -149,7 +153,7 @@ Examples :
 </pre>
     
     
-    <a href="https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj#L37" id="var-source">Source</a>
+    <a href="https://github.com/clojure/core.incubator/blob/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj#L40" id="var-source">Source</a>
   </div><div id="var-entry">
     <br />
     <hr />
@@ -160,7 +164,7 @@ Examples :
     <pre id="var-docstr">Same as defmacro but yields a private definition</pre>
     
     
-    <a href="https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj#L16" id="var-source">Source</a>
+    <a href="https://github.com/clojure/core.incubator/blob/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj#L16" id="var-source">Source</a>
   </div><div id="var-entry">
     <br />
     <hr />
@@ -173,7 +177,7 @@ nested structure. keys is a sequence of keys. Any empty maps that result
 will not be present in the new structure.</pre>
     
     
-    <a href="https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj#L56" id="var-source">Source</a>
+    <a href="https://github.com/clojure/core.incubator/blob/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj#L62" id="var-source">Source</a>
   </div><div id="var-entry">
     <br />
     <hr />
@@ -184,7 +188,7 @@ will not be present in the new structure.</pre>
     <pre id="var-docstr">Constructs a Java object whose class is specified by a String.</pre>
     
     
-    <a href="https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj#L70" id="var-source">Source</a>
+    <a href="https://github.com/clojure/core.incubator/blob/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj#L76" id="var-source">Source</a>
   </div><div id="var-entry">
     <br />
     <hr />
@@ -195,7 +199,7 @@ will not be present in the new structure.</pre>
     <pre id="var-docstr">Returns true if (seq x) will succeed, false otherwise.</pre>
     
     
-    <a href="https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj#L77" id="var-source">Source</a>
+    <a href="https://github.com/clojure/core.incubator/blob/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj#L83" id="var-source">Source</a>
   </div>
 </div>
 

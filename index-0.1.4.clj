@@ -1,6 +1,6 @@
 {:namespaces
  ({:source-url
-   "https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj",
+   "https://github.com/clojure/core.incubator/blob/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj",
    :wiki-url
    "http://clojure.github.com/core.incubator/clojure.core.incubator-api.html",
    :name "clojure.core.incubator",
@@ -19,13 +19,14 @@
    :name "-?>",
    :namespace "clojure.core.incubator",
    :source-url
-   "https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj#L29",
+   "https://github.com/clojure/core.incubator/blob/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj#L29",
+   :deprecated "0.1.3",
    :raw-source-url
-   "https://github.com/clojure/core.incubator/raw/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj",
+   "https://github.com/clojure/core.incubator/raw/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj",
    :wiki-url
    "http://clojure.github.com/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/-?>",
    :doc
-   "Same as clojure.core/-> but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).\nExamples :\n(-?> \"foo\" .toUpperCase (.substring 1)) returns \"OO\"\n(-?> nil .toUpperCase (.substring 1)) returns nil\n",
+   "DEPRECATED: use clojure.core/some-> instead.\n\nSame as clojure.core/-> but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).\nExamples :\n(-?> \"foo\" .toUpperCase (.substring 1)) returns \"OO\"\n(-?> nil .toUpperCase (.substring 1)) returns nil\n",
    :var-type "macro",
    :line 29,
    :file "src/main/clojure/clojure/core/incubator.clj"}
@@ -33,37 +34,38 @@
    :name "-?>>",
    :namespace "clojure.core.incubator",
    :source-url
-   "https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj#L45",
+   "https://github.com/clojure/core.incubator/blob/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj#L48",
+   :deprecated "0.1.3",
    :raw-source-url
-   "https://github.com/clojure/core.incubator/raw/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj",
+   "https://github.com/clojure/core.incubator/raw/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj",
    :wiki-url
    "http://clojure.github.com/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/-?>>",
    :doc
-   "Same as clojure.core/->> but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).\nExamples :\n(-?>> (range 5) (map inc)) returns (1 2 3 4 5)\n(-?>> [] seq (map inc)) returns nil\n",
+   "DEPRECATED: use clojure.core/some->> instead.\n\n Same as clojure.core/->> but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).\n Examples :\n (-?>> (range 5) (map inc)) returns (1 2 3 4 5)\n (-?>> [] seq (map inc)) returns nil\n ",
    :var-type "macro",
-   :line 45,
+   :line 48,
    :file "src/main/clojure/clojure/core/incubator.clj"}
   {:arglists ([x form] [x form & forms]),
    :name ".?.",
    :namespace "clojure.core.incubator",
    :source-url
-   "https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj#L37",
+   "https://github.com/clojure/core.incubator/blob/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj#L40",
    :raw-source-url
-   "https://github.com/clojure/core.incubator/raw/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj",
+   "https://github.com/clojure/core.incubator/raw/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj",
    :wiki-url
    "http://clojure.github.com/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/.?.",
    :doc
    "Same as clojure.core/.. but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).\nExamples :\n(.?. \"foo\" .toUpperCase (.substring 1)) returns \"OO\"\n(.?. nil .toUpperCase (.substring 1)) returns nil\n",
    :var-type "macro",
-   :line 37,
+   :line 40,
    :file "src/main/clojure/clojure/core/incubator.clj"}
   {:arglists ([name & decls]),
    :name "defmacro-",
    :namespace "clojure.core.incubator",
    :source-url
-   "https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj#L16",
+   "https://github.com/clojure/core.incubator/blob/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj#L16",
    :raw-source-url
-   "https://github.com/clojure/core.incubator/raw/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj",
+   "https://github.com/clojure/core.incubator/raw/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj",
    :wiki-url
    "http://clojure.github.com/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/defmacro-",
    :doc "Same as defmacro but yields a private definition",
@@ -74,42 +76,42 @@
    :name "dissoc-in",
    :namespace "clojure.core.incubator",
    :source-url
-   "https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj#L56",
+   "https://github.com/clojure/core.incubator/blob/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj#L62",
    :raw-source-url
-   "https://github.com/clojure/core.incubator/raw/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj",
+   "https://github.com/clojure/core.incubator/raw/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj",
    :wiki-url
    "http://clojure.github.com/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/dissoc-in",
    :doc
    "Dissociates an entry from a nested associative structure returning a new\nnested structure. keys is a sequence of keys. Any empty maps that result\nwill not be present in the new structure.",
    :var-type "function",
-   :line 56,
+   :line 62,
    :file "src/main/clojure/clojure/core/incubator.clj"}
   {:arglists ([class-name & args]),
    :name "new-by-name",
    :namespace "clojure.core.incubator",
    :source-url
-   "https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj#L70",
+   "https://github.com/clojure/core.incubator/blob/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj#L76",
    :raw-source-url
-   "https://github.com/clojure/core.incubator/raw/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj",
+   "https://github.com/clojure/core.incubator/raw/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj",
    :wiki-url
    "http://clojure.github.com/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/new-by-name",
    :doc
    "Constructs a Java object whose class is specified by a String.",
    :var-type "function",
-   :line 70,
+   :line 76,
    :file "src/main/clojure/clojure/core/incubator.clj"}
   {:arglists ([x]),
    :name "seqable?",
    :namespace "clojure.core.incubator",
    :source-url
-   "https://github.com/clojure/core.incubator/blob/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj#L77",
+   "https://github.com/clojure/core.incubator/blob/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj#L83",
    :raw-source-url
-   "https://github.com/clojure/core.incubator/raw/33b04a0cfc3018a9873153f1f086a62c0f72ec42/src/main/clojure/clojure/core/incubator.clj",
+   "https://github.com/clojure/core.incubator/raw/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj",
    :wiki-url
    "http://clojure.github.com/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/seqable?",
    :doc "Returns true if (seq x) will succeed, false otherwise.",
    :var-type "function",
-   :line 77,
+   :line 83,
    :file "src/main/clojure/clojure/core/incubator.clj"}
   {:arglists ([& strings]),
    :name "<<",

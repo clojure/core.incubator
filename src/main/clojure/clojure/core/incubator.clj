@@ -87,6 +87,6 @@
       (instance? clojure.lang.Seqable x)
       (nil? x)
       (instance? Iterable x)
-      (-> x .getClass .isArray)
+      (.isArray (.getClass ^Object x))
       (string? x)
       (instance? java.util.Map x)))

@@ -16,4 +16,8 @@
     <url>git@github.com:clojure/core.incubator.git</url>
     <tag>HEAD</tag>
   </scm>
+
+  <properties>
+    <clojure.warnOnReflection>true</clojure.warnOnReflection>
+  </properties>
 </project>

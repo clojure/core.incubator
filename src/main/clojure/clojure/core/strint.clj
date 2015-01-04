@@ -37,7 +37,7 @@
         (cons (subs s 0 2) (interpolate (subs s 2))))))
   ([^String s]
     (if-let [start (->> ["~{" "~("]
-                     (map #(.indexOf s %))
+                     (map #(.indexOf s ^String %))
                      (remove #(== -1 %))
                      sort
                      first)]

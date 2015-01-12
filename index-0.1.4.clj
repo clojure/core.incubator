@@ -1,6 +1,6 @@
 {:namespaces
  ({:source-url
-   "https://github.com/clojure/core.incubator/blob/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj",
+   "https://github.com/clojure/core.incubator/blob/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj",
    :wiki-url
    "http://clojure.github.com/core.incubator/clojure.core.incubator-api.html",
    :name "clojure.core.incubator",
@@ -8,7 +8,7 @@
    :doc
    "Functions/macros variants of the ones that can be found in clojure.core \n(note to other contrib members: feel free to add to this lib)"}
   {:source-url
-   "https://github.com/clojure/core.incubator/blob/9f2590f2cf22c37ba66010983bf6eaf21a90084c/src/main/clojure/clojure/core/strint.clj",
+   "https://github.com/clojure/core.incubator/blob/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/strint.clj",
    :wiki-url
    "http://clojure.github.com/core.incubator/clojure.core.strint-api.html",
    :name "clojure.core.strint",
@@ -19,10 +19,10 @@
    :name "-?>",
    :namespace "clojure.core.incubator",
    :source-url
-   "https://github.com/clojure/core.incubator/blob/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj#L29",
+   "https://github.com/clojure/core.incubator/blob/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj#L29",
    :deprecated "0.1.3",
    :raw-source-url
-   "https://github.com/clojure/core.incubator/raw/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj",
+   "https://github.com/clojure/core.incubator/raw/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj",
    :wiki-url
    "http://clojure.github.com/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/-?>",
    :doc
@@ -34,10 +34,10 @@
    :name "-?>>",
    :namespace "clojure.core.incubator",
    :source-url
-   "https://github.com/clojure/core.incubator/blob/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj#L48",
+   "https://github.com/clojure/core.incubator/blob/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj#L48",
    :deprecated "0.1.3",
    :raw-source-url
-   "https://github.com/clojure/core.incubator/raw/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj",
+   "https://github.com/clojure/core.incubator/raw/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj",
    :wiki-url
    "http://clojure.github.com/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/-?>>",
    :doc
@@ -49,9 +49,9 @@
    :name ".?.",
    :namespace "clojure.core.incubator",
    :source-url
-   "https://github.com/clojure/core.incubator/blob/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj#L40",
+   "https://github.com/clojure/core.incubator/blob/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj#L40",
    :raw-source-url
-   "https://github.com/clojure/core.incubator/raw/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj",
+   "https://github.com/clojure/core.incubator/raw/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj",
    :wiki-url
    "http://clojure.github.com/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/.?.",
    :doc
@@ -63,9 +63,9 @@
    :name "defmacro-",
    :namespace "clojure.core.incubator",
    :source-url
-   "https://github.com/clojure/core.incubator/blob/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj#L16",
+   "https://github.com/clojure/core.incubator/blob/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj#L16",
    :raw-source-url
-   "https://github.com/clojure/core.incubator/raw/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj",
+   "https://github.com/clojure/core.incubator/raw/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj",
    :wiki-url
    "http://clojure.github.com/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/defmacro-",
    :doc "Same as defmacro but yields a private definition",
@@ -76,9 +76,9 @@
    :name "dissoc-in",
    :namespace "clojure.core.incubator",
    :source-url
-   "https://github.com/clojure/core.incubator/blob/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj#L62",
+   "https://github.com/clojure/core.incubator/blob/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj#L62",
    :raw-source-url
-   "https://github.com/clojure/core.incubator/raw/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj",
+   "https://github.com/clojure/core.incubator/raw/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj",
    :wiki-url
    "http://clojure.github.com/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/dissoc-in",
    :doc
@@ -90,9 +90,9 @@
    :name "new-by-name",
    :namespace "clojure.core.incubator",
    :source-url
-   "https://github.com/clojure/core.incubator/blob/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj#L76",
+   "https://github.com/clojure/core.incubator/blob/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj#L76",
    :raw-source-url
-   "https://github.com/clojure/core.incubator/raw/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj",
+   "https://github.com/clojure/core.incubator/raw/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj",
    :wiki-url
    "http://clojure.github.com/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/new-by-name",
    :doc
@@ -104,9 +104,9 @@
    :name "seqable?",
    :namespace "clojure.core.incubator",
    :source-url
-   "https://github.com/clojure/core.incubator/blob/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj#L83",
+   "https://github.com/clojure/core.incubator/blob/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj#L83",
    :raw-source-url
-   "https://github.com/clojure/core.incubator/raw/b7622bfa47adad9916c7ca7caad66ce2b76ff31c/src/main/clojure/clojure/core/incubator.clj",
+   "https://github.com/clojure/core.incubator/raw/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj",
    :wiki-url
    "http://clojure.github.com/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/seqable?",
    :doc "Returns true if (seq x) will succeed, false otherwise.",
@@ -117,9 +117,9 @@
    :name "<<",
    :namespace "clojure.core.strint",
    :source-url
-   "https://github.com/clojure/core.incubator/blob/9f2590f2cf22c37ba66010983bf6eaf21a90084c/src/main/clojure/clojure/core/strint.clj#L49",
+   "https://github.com/clojure/core.incubator/blob/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/strint.clj#L49",
    :raw-source-url
-   "https://github.com/clojure/core.incubator/raw/9f2590f2cf22c37ba66010983bf6eaf21a90084c/src/main/clojure/clojure/core/strint.clj",
+   "https://github.com/clojure/core.incubator/raw/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/strint.clj",
    :wiki-url
    "http://clojure.github.com/core.incubator//clojure.core.strint-api.html#clojure.core.strint/<<",
    :doc

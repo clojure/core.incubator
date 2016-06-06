@@ -4,14 +4,14 @@
    :author "Laurent Petit (and others)",
    :name "clojure.core.incubator",
    :wiki-url
-   "http://clojure.github.com/core.incubator/clojure.core.incubator-api.html",
+   "http://clojure.github.io/core.incubator/clojure.core.incubator-api.html",
    :source-url
    "https://github.com/clojure/core.incubator/blob/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj"}
   {:doc "Compile-time string interpolation for Clojure.",
    :author "Chas Emerick",
    :name "clojure.core.strint",
    :wiki-url
-   "http://clojure.github.com/core.incubator/clojure.core.strint-api.html",
+   "http://clojure.github.io/core.incubator/clojure.core.strint-api.html",
    :source-url
    "https://github.com/clojure/core.incubator/blob/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/strint.clj"}),
  :vars
@@ -29,7 +29,7 @@
    "DEPRECATED: use clojure.core/some-> instead.\n\nSame as clojure.core/-> but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).\nExamples :\n(-?> \"foo\" .toUpperCase (.substring 1)) returns \"OO\"\n(-?> nil .toUpperCase (.substring 1)) returns nil\n",
    :namespace "clojure.core.incubator",
    :wiki-url
-   "http://clojure.github.com/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/-?>"}
+   "http://clojure.github.io/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/-?>"}
   {:raw-source-url
    "https://github.com/clojure/core.incubator/raw/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj",
    :name "-?>>",
@@ -44,7 +44,7 @@
    "DEPRECATED: use clojure.core/some->> instead.\n\n Same as clojure.core/->> but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).\n Examples :\n (-?>> (range 5) (map inc)) returns (1 2 3 4 5)\n (-?>> [] seq (map inc)) returns nil\n ",
    :namespace "clojure.core.incubator",
    :wiki-url
-   "http://clojure.github.com/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/-?>>"}
+   "http://clojure.github.io/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/-?>>"}
   {:raw-source-url
    "https://github.com/clojure/core.incubator/raw/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj",
    :name ".?.",
@@ -58,7 +58,7 @@
    "Same as clojure.core/.. but returns nil as soon as the threaded value is nil itself (thus short-circuiting any pending computation).\nExamples :\n(.?. \"foo\" .toUpperCase (.substring 1)) returns \"OO\"\n(.?. nil .toUpperCase (.substring 1)) returns nil\n",
    :namespace "clojure.core.incubator",
    :wiki-url
-   "http://clojure.github.com/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/.?."}
+   "http://clojure.github.io/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/.?."}
   {:raw-source-url
    "https://github.com/clojure/core.incubator/raw/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj",
    :name "defmacro-",
@@ -71,7 +71,7 @@
    :doc "Same as defmacro but yields a private definition",
    :namespace "clojure.core.incubator",
    :wiki-url
-   "http://clojure.github.com/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/defmacro-"}
+   "http://clojure.github.io/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/defmacro-"}
   {:raw-source-url
    "https://github.com/clojure/core.incubator/raw/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj",
    :name "dissoc-in",
@@ -85,7 +85,7 @@
    "Dissociates an entry from a nested associative structure returning a new\nnested structure. keys is a sequence of keys. Any empty maps that result\nwill not be present in the new structure.",
    :namespace "clojure.core.incubator",
    :wiki-url
-   "http://clojure.github.com/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/dissoc-in"}
+   "http://clojure.github.io/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/dissoc-in"}
   {:raw-source-url
    "https://github.com/clojure/core.incubator/raw/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj",
    :name "new-by-name",
@@ -99,7 +99,7 @@
    "Constructs a Java object whose class is specified by a String.",
    :namespace "clojure.core.incubator",
    :wiki-url
-   "http://clojure.github.com/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/new-by-name"}
+   "http://clojure.github.io/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/new-by-name"}
   {:raw-source-url
    "https://github.com/clojure/core.incubator/raw/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj",
    :name "seqable?",
@@ -112,7 +112,7 @@
    :doc "Returns true if (seq x) will succeed, false otherwise.",
    :namespace "clojure.core.incubator",
    :wiki-url
-   "http://clojure.github.com/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/seqable?"}
+   "http://clojure.github.io/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/seqable?"}
   {:raw-source-url
    "https://github.com/clojure/core.incubator/raw/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/strint.clj",
    :name "<<",
@@ -126,4 +126,4 @@
    "Accepts one or more strings; emits a `str` invocation that concatenates\nthe string data and evaluated expressions contained within that argument.\nEvaluation is controlled using ~{} and ~() forms. The former is used for\nsimple value replacement using clojure.core/str; the latter can be used to\nembed the results of arbitrary function invocation into the produced string.\n\nExamples:\n  user=> (def v 30.5)\n  #'user/v\n  user=> (<< \"This trial required ~{v}ml of solution.\")\n  \"This trial required 30.5ml of solution.\"\n  user=> (<< \"There are ~(int v) days in November.\")\n  \"There are 30 days in November.\"\n  user=> (def m {:a [1 2 3]})\n  #'user/m\n  user=> (<< \"The total for your order is $~(->> m :a (apply +)).\")\n  \"The total for your order is $6.\"\n  user=> (<< \"Just split a long interpolated string up into ~(-> m :a (get 0)), \"\n           \"~(-> m :a (get 1)), or even ~(-> m :a (get 2)) separate strings \"\n           \"if you don't want a << expression to end up being e.g. ~(* 4 (int v)) \"\n           \"columns wide.\")\n  \"Just split a long interpolated string up into 1, 2, or even 3 separate strings if you don't want a << expression to end up being e.g. 120 columns wide.\"\n  \nNote that quotes surrounding string literals within ~() forms must be\nescaped.",
    :namespace "clojure.core.strint",
    :wiki-url
-   "http://clojure.github.com/core.incubator//clojure.core.strint-api.html#clojure.core.strint/<<"})}
+   "http://clojure.github.io/core.incubator//clojure.core.strint-api.html#clojure.core.strint/<<"})}

@@ -6,7 +6,7 @@
    :wiki-url
    "http://clojure.github.io/core.incubator/clojure.core.incubator-api.html",
    :source-url
-   "https://github.com/clojure/core.incubator/blob/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj"}
+   "https://github.com/clojure/core.incubator/blob/0a3b741c2757ff77cfaf2bf774bdc9cf407944cf/src/main/clojure/clojure/core/incubator.clj"}
   {:doc "Compile-time string interpolation for Clojure.",
    :author "Chas Emerick",
    :name "clojure.core.strint",
@@ -16,12 +16,12 @@
    "https://github.com/clojure/core.incubator/blob/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/strint.clj"}),
  :vars
  ({:raw-source-url
-   "https://github.com/clojure/core.incubator/raw/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj",
+   "https://github.com/clojure/core.incubator/raw/0a3b741c2757ff77cfaf2bf774bdc9cf407944cf/src/main/clojure/clojure/core/incubator.clj",
    :name "-?>",
    :file "src/main/clojure/clojure/core/incubator.clj",
    :source-url
-   "https://github.com/clojure/core.incubator/blob/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj#L29",
-   :line 29,
+   "https://github.com/clojure/core.incubator/blob/0a3b741c2757ff77cfaf2bf774bdc9cf407944cf/src/main/clojure/clojure/core/incubator.clj#L30",
+   :line 30,
    :deprecated "0.1.3",
    :var-type "macro",
    :arglists ([x form] [x form & forms]),
@@ -31,12 +31,12 @@
    :wiki-url
    "http://clojure.github.io/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/-?>"}
   {:raw-source-url
-   "https://github.com/clojure/core.incubator/raw/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj",
+   "https://github.com/clojure/core.incubator/raw/0a3b741c2757ff77cfaf2bf774bdc9cf407944cf/src/main/clojure/clojure/core/incubator.clj",
    :name "-?>>",
    :file "src/main/clojure/clojure/core/incubator.clj",
    :source-url
-   "https://github.com/clojure/core.incubator/blob/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj#L48",
-   :line 48,
+   "https://github.com/clojure/core.incubator/blob/0a3b741c2757ff77cfaf2bf774bdc9cf407944cf/src/main/clojure/clojure/core/incubator.clj#L49",
+   :line 49,
    :deprecated "0.1.3",
    :var-type "macro",
    :arglists ([x form] [x form & forms]),
@@ -46,12 +46,12 @@
    :wiki-url
    "http://clojure.github.io/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/-?>>"}
   {:raw-source-url
-   "https://github.com/clojure/core.incubator/raw/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj",
+   "https://github.com/clojure/core.incubator/raw/0a3b741c2757ff77cfaf2bf774bdc9cf407944cf/src/main/clojure/clojure/core/incubator.clj",
    :name ".?.",
    :file "src/main/clojure/clojure/core/incubator.clj",
    :source-url
-   "https://github.com/clojure/core.incubator/blob/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj#L40",
-   :line 40,
+   "https://github.com/clojure/core.incubator/blob/0a3b741c2757ff77cfaf2bf774bdc9cf407944cf/src/main/clojure/clojure/core/incubator.clj#L41",
+   :line 41,
    :var-type "macro",
    :arglists ([x form] [x form & forms]),
    :doc
@@ -60,12 +60,12 @@
    :wiki-url
    "http://clojure.github.io/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/.?."}
   {:raw-source-url
-   "https://github.com/clojure/core.incubator/raw/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj",
+   "https://github.com/clojure/core.incubator/raw/0a3b741c2757ff77cfaf2bf774bdc9cf407944cf/src/main/clojure/clojure/core/incubator.clj",
    :name "defmacro-",
    :file "src/main/clojure/clojure/core/incubator.clj",
    :source-url
-   "https://github.com/clojure/core.incubator/blob/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj#L16",
-   :line 16,
+   "https://github.com/clojure/core.incubator/blob/0a3b741c2757ff77cfaf2bf774bdc9cf407944cf/src/main/clojure/clojure/core/incubator.clj#L17",
+   :line 17,
    :var-type "macro",
    :arglists ([name & decls]),
    :doc "Same as defmacro but yields a private definition",
@@ -73,12 +73,12 @@
    :wiki-url
    "http://clojure.github.io/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/defmacro-"}
   {:raw-source-url
-   "https://github.com/clojure/core.incubator/raw/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj",
+   "https://github.com/clojure/core.incubator/raw/0a3b741c2757ff77cfaf2bf774bdc9cf407944cf/src/main/clojure/clojure/core/incubator.clj",
    :name "dissoc-in",
    :file "src/main/clojure/clojure/core/incubator.clj",
    :source-url
-   "https://github.com/clojure/core.incubator/blob/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj#L62",
-   :line 62,
+   "https://github.com/clojure/core.incubator/blob/0a3b741c2757ff77cfaf2bf774bdc9cf407944cf/src/main/clojure/clojure/core/incubator.clj#L63",
+   :line 63,
    :var-type "function",
    :arglists ([m [k & ks :as keys]]),
    :doc
@@ -87,12 +87,12 @@
    :wiki-url
    "http://clojure.github.io/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/dissoc-in"}
   {:raw-source-url
-   "https://github.com/clojure/core.incubator/raw/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj",
+   "https://github.com/clojure/core.incubator/raw/0a3b741c2757ff77cfaf2bf774bdc9cf407944cf/src/main/clojure/clojure/core/incubator.clj",
    :name "new-by-name",
    :file "src/main/clojure/clojure/core/incubator.clj",
    :source-url
-   "https://github.com/clojure/core.incubator/blob/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj#L76",
-   :line 76,
+   "https://github.com/clojure/core.incubator/blob/0a3b741c2757ff77cfaf2bf774bdc9cf407944cf/src/main/clojure/clojure/core/incubator.clj#L77",
+   :line 77,
    :var-type "function",
    :arglists ([class-name & args]),
    :doc
@@ -101,15 +101,17 @@
    :wiki-url
    "http://clojure.github.io/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/new-by-name"}
   {:raw-source-url
-   "https://github.com/clojure/core.incubator/raw/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj",
+   "https://github.com/clojure/core.incubator/raw/0a3b741c2757ff77cfaf2bf774bdc9cf407944cf/src/main/clojure/clojure/core/incubator.clj",
    :name "seqable?",
    :file "src/main/clojure/clojure/core/incubator.clj",
    :source-url
-   "https://github.com/clojure/core.incubator/blob/98672b9f627631215b47744fe193550f389d1095/src/main/clojure/clojure/core/incubator.clj#L83",
-   :line 83,
+   "https://github.com/clojure/core.incubator/blob/0a3b741c2757ff77cfaf2bf774bdc9cf407944cf/src/main/clojure/clojure/core/incubator.clj#L84",
+   :line 84,
+   :deprecated "0.1.4",
    :var-type "function",
    :arglists ([x]),
-   :doc "Returns true if (seq x) will succeed, false otherwise.",
+   :doc
+   "DEPRECATED: use clojure.core/seqable? as of Clojure 1.9.0-alpha5.\n\nReturns true if (seq x) will succeed, false otherwise.",
    :namespace "clojure.core.incubator",
    :wiki-url
    "http://clojure.github.io/core.incubator//clojure.core.incubator-api.html#clojure.core.incubator/seqable?"}

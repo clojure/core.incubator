@@ -11,7 +11,8 @@
 (ns ^{:author "Laurent Petit (and others)"
       :doc "Functions/macros variants of the ones that can be found in clojure.core 
             (note to other contrib members: feel free to add to this lib)"}
-  clojure.core.incubator)
+  clojure.core.incubator
+  (:refer-clojure :exclude [seqable?]))
 
 (defmacro defmacro-
   "Same as defmacro but yields a private definition"
@@ -81,7 +82,10 @@
    (into-array Object args)))
 
 (defn seqable?
-  "Returns true if (seq x) will succeed, false otherwise."
+  "DEPRECATED: use clojure.core/seqable? as of Clojure 1.9.0-alpha5.
+
+  Returns true if (seq x) will succeed, false otherwise."
+  {:deprecated "0.1.4"}
   [x]
   (or (seq? x)
       (instance? clojure.lang.Seqable x)

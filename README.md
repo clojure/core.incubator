@@ -4,7 +4,7 @@ Future home of fns proposed for core inclusion.  Currently:
 
 * A "nil-safe" threading macro for interop forms (`.?.`)
 * An implementation of `dissoc-in`
-* An implementation of `seqable?`
+* An implementation of `seqable?` (deprecated - in core as of Clojure 1.9.0-alpha5)
 * A string interpolation macro (`<<`), originally described
   [here](http://cemerick.com/2009/12/04/string-interpolation-in-clojure/).
 
@@ -21,7 +21,7 @@ documentation](http://clojure.github.com/core.incubator/).
 Add a dependency on core.incubator to your Leinigen `project.clj`:
 
 ```clojure
-[org.clojure/core.incubator "0.1.3"]
+[org.clojure/core.incubator "0.1.4"]
 ```
 
 …or to your Maven `pom.xml`:
@@ -30,7 +30,7 @@ Add a dependency on core.incubator to your Leinigen `project.clj`:
 <dependency>
   <groupId>org.clojure</groupId>
   <artifactId>core.incubator</artifactId>
-  <version>0.1.3</version>
+  <version>0.1.4</version>
 </dependency>
 ```
 

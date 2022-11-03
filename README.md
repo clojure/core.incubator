@@ -6,7 +6,7 @@ Future home of fns proposed for core inclusion.  Currently:
 * An implementation of `dissoc-in`
 * An implementation of `seqable?` (deprecated - in core as of Clojure 1.9.0-alpha5)
 * A string interpolation macro (`<<`), originally described
-  [here](http://cemerick.com/2009/12/04/string-interpolation-in-clojure/).
+  [here](https://cemerick.com/blog/2009/12/04/string-interpolation-in-clojure.html).
 
 NOTE: If you are looking for the other nil-safe threading macros — `-?>` and
 `-?>>` — they're still here, but deprecated; they were effectively promoted into

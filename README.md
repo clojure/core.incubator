@@ -1,3 +1,5 @@
+# THIS PROJECT IS NO LONGER ACTIVE
+
 # core.incubator
 
 Future home of fns proposed for core inclusion.  Currently:
